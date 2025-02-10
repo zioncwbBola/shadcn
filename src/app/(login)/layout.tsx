@@ -15,7 +15,7 @@ export default function LoginLayout({
   return (
     <html lang="pt-br" data-theme="corporate">
       <body className="min-h-screen bg-base-200">
-        <div className="w-full max-w-md p-6 bg-base-100 rounded-lg shadow-lg">
+        <div className="w-full max-w-md flex  p-6 bg-base-100 rounded-lg shadow-lg">
           {children}
         </div>
       </body>
