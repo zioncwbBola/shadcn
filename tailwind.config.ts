@@ -357,7 +357,17 @@ export default {
           '--navbar-padding': '.75rem',
           '--border-btn': '1px',
         },
-      }, "business"
+      }, 
+      "business",
+      {
+        "mytheme": {
+          primary: '#4caf50',
+          secondary: '#009688',
+          accent: '#ff5722',
+          neutral: '#2c3e50',
+          'base-100': '#ffffff',
+      },
+      },
     ],
   },
 } satisfies Config;
