@@ -55,7 +55,7 @@ import ThemeToggle from '@/components/ThemeToggle';
 
 const Sidebar = () => {
   return (
-    <div className="flex flex-col  space-y-4 bg-base-200 p-4 rounded-lg">
+    <div className="flex flex-col space-y-4 bg-base-200 p-4 rounded-lg">
       <ul className="menu menu-horizontal lg:menu-vertical lg:w-full rounded-box">
         <li className='p-2 hover:bg-accent lg:w-full hover:text-white focus:outline-none focus:ring-2 focus:ring-accent focus:ring-opacity-50 rounded-box'>
           <Link href="/" className="tooltip tooltip-bottom lg:tooltip-right" data-tip="Home">

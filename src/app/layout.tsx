@@ -16,8 +16,8 @@ export default function RootLayout({
   return (
     <html lang="pt-br" data-theme="corporate">
       <body className="min-h-screen bg-base-200">
-        <div className="flex flex-col justify-center items-center lg:flex-row w-full h-full min-h-screen">
-          <aside className="bg-secondary w-full lg:w-1/5 p-4">
+        <div className="flex flex-col justify-center lg:flex-row w-full h-full min-h-screen">
+          <aside className="bg-secondary min-h-screen flex flex-row items-center p-4">
             <Sidebar />
           </aside>
 
