@@ -357,7 +357,7 @@ export default {
           '--navbar-padding': '.75rem',
           '--border-btn': '1px',
         },
-      }
+      }, "business"
     ],
   },
 } satisfies Config;

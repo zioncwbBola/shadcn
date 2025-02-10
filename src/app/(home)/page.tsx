@@ -1,5 +1,5 @@
 // src/app/page.tsx
-import AboutMe from "@/components/AboutMe";
+import AboutMe from "@/components/portifolio/AboutMe";
 export default function Home() {
   return (
     <>

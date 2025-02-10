@@ -48,7 +48,7 @@
 
 // export default Sidebar;
 // src\components\Sidebar.tsx
-import { HomeIcon } from 'lucide-react';
+import { HomeIcon, StoreIcon } from 'lucide-react';
 import Link from 'next/link';
 import { BiDetail, BiStats } from 'react-icons/bi';
 import ThemeToggle from '@/components/ThemeToggle';
@@ -85,6 +85,12 @@ const Sidebar = () => {
           <Link href="/contact" className="tooltip tooltip-bottom lg:tooltip-right" data-tip="Contato">
             <BiStats className="text-primary text-lg inline-block" />
             <span className='lg:not-sr-only sr-only text-sm text-primary'> - Fale Comigo</span>
+          </Link>
+        </li>
+        <li className='p-2 hover:bg-accent lg:w-full hover:text-white focus:outline-none focus:ring-2 focus:ring-accent focus:ring-opacity-50 rounded-box'>
+          <Link href="/store" className="tooltip tooltip-bottom lg:tooltip-right" data-tip="Loja">
+            <StoreIcon className="text-primary text-lg inline-block" />
+            <span className='lg:not-sr-only sr-only text-sm text-primary'> - Loja Virtual</span>
           </Link>
         </li>
       </ul>
