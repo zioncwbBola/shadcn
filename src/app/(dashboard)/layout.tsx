@@ -1,28 +1,29 @@
 // src/app/(dashboard)/layout.tsx
-import type { Metadata } from 'next';
-import '@/styles/globals.css';
-
-export const metadata: Metadata = {
-  title: 'Dashboard - ZionCWB',
-  description: 'Painel administrativo para gestão de conteúdos e loja',
-};
+import React from 'react';
+import Navbar from '@/components/dashboard/Navbar';
+import Sidebar from '@/components/dashboard/Sidebar';
 
 export default function DashboardLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
-    <html lang="pt-br" data-theme="business">
-      <body className="min-h-screen bg-base-200">
-        {/* Sidebar do Dashboard */}
-        <aside className="w-64 bg-base-100 p-4 shadow-lg min-h-screen">
-        </aside>
+    <html lang="pt-br" data-theme="corporate">
+      <body className="flex min-h-screen bg-base-200">
+        {/* Sidebar */}
+        <Sidebar />
 
-        {/* Conteúdo Principal */}
-        <main className="flex-1 p-6 bg-base-300 overflow-auto">
-          {children}
-        </main>
+        {/* Conteúdo principal */}
+        <div className="flex-1 flex flex-col">
+          {/* Navbar */}
+          <Navbar />
+
+          {/* Conteúdo da página */}
+          <main className="flex-1 p-4">
+            {children}
+          </main>
+        </div>
       </body>
     </html>
   );
